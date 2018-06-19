@@ -1,5 +1,5 @@
 body {background-color: white;font-family:Calibri;}
-.row {
-	margin-left: 25px !important;
-	margin-right: 25px !important;
+.row-margin {
+	margin-left: 16px !important;
+	margin-right: 16px !important;
 }
