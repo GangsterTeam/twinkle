@@ -1,16 +1,11 @@
 body {
-  background-color: #152836;
+  background-color: "white";
   font-family: Calibri;
 }
 .row-margin {
   margin-left: 16px !important;
   margin-right: 16px !important;
 }
-/* body {
-  background-color: #152836;
-  color: #eee;
-  font-family: Calibri;
-} */
 
 .cont {
   text-align: center;
@@ -19,8 +14,6 @@ body {
 .btn {
   -moz-user-select: none;
   background-image: none;
-  border: 1px solid transparent;
-  border-radius: 2px;
   cursor: pointer;
   display: inline-block;
   font-size: 14px;
@@ -186,4 +179,9 @@ body {
 
 .demo-gallery.dark > ul > li a {
   border: 3px solid #04070a;
+}
+
+.fixed-footer {
+  position: fixed;
+  bottom: 0;
 }
