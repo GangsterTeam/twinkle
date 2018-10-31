@@ -1,192 +1,83 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-  <title>twinkle</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" type="text/css" href="style/style.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {font-family: Arial, Helvetica, sans-serif;}
+    form {border: 3px solid #f1f1f1;}
+    input[type=text], input[type=password] {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+    }
+    button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 14px 20px;
+      margin: 8px 0;
+      border: none;
+      cursor: pointer;
+      width: 100%;
+    }
+    button:hover {
+      opacity: 0.8;
+    }
+    .cancelbtn {
+      width: auto;
+      padding: 10px 18px;
+      background-color: #f44336;
+    }
+    .imgcontainer {
+      text-align: center;
+      margin: 24px 0 12px 0;
+    }
+    img.avatar {
+      width: 40%;
+      border-radius: 50%;
+    }
+    .container {
+      padding: 16px;
+    }
+    span.psw {
+      float: right;
+      padding-top: 16px;
+    }
+    /* Change styles for span and cancel button on extra small screens */
+    @media screen and (max-width: 300px) {
+      span.psw {
+        display: block;
+        float: none;
+      }
+      .cancelbtn {
+        width: 100%;
+      }
+    }
+  </style>
 </head>
+<body>
+<h2>Login Form</h2>
+<form action="/action_page.php">
+  <div class="imgcontainer">
+    <img src="img_avatar2.png" alt="Avatar" class="avatar">
+  </div>
+  <div class="container">
+    <label for="uname"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="uname" required>
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
 
-<body style="background-color:#e9ecef;">
-  <!-- nav -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <img src="./images/logo.png" alt="Twinkle" class="img-fluid rounded" style="width:75px;height:50px;margin-top:2px;" />
-    <div style="margin-left:5px;">Twinkle</div>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">About Us </a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false">
-            Dropdown
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Something else here</a>
-          </div>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link " href="./src/gallery/index.html">Gallery</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false">
-            Pages
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="./loginform.html">Login</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="./registerform.html">Register</a>
-          </div>
-        </li>
-      </ul>
-      <div>
-        <form class="form-inline my-2 my-lg-0">
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">SignOut</button>
-        </form>
-      </div>
-    </div>
-  </nav>
-  <!-- cards -->
-  <section class="container-fluid" style="margin-top:10px;">
-    <div class="row">
-      <div class="col">
-        <div class="card ">
-          <div class="card-body">
-            <h5 class="card-title">History</h5>
-            <p class="card-text">Lorem ipsum, or lipsum as it is sometimes known, is dummy text.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">Purpose</h5>
-            <p class="card-text">create a natural looking block of text (sentence, paragraph, page, etc.)
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">Usage</h5>
-            <p class="card-text">Today it's seen all around the web; on templates, websites, and stock designs.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">Special title </h5>
-            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- charts -->
-  <section class="container-fluid">
-    <div class="row my-3">
-      <div class="col">
-        <h4>Chart</h4>
-      </div>
-    </div>
-    <div class="row py-2">
-      <div class="col-md-4 py-1">
-        <div class="card">
-          <div class="card-body">
-            <canvas id="chLine"></canvas>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4 py-1">
-        <div class="card">
-          <div class="card-body">
-            <canvas id="chDonut2"></canvas>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="card">
-          <div class="card-body">
-            <canvas id="chBar"></canvas>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- table -->
-  <section class="container-fluid">
-    <div class="row">
-      <div class="col">
-        <div class="table-responsive">
-          <table class="table table-light table-bordered table-hover ">
-            <thead>
-              <tr>
-                <th scope="col">#</th>
-                <th scope="col">First</th>
-                <th scope="col">Last</th>
-                <th scope="col">Handle</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th scope="row">1</th>
-                <td>Mark</td>
-                <td>Otto</td>
-                <td>@mdo</td>
-              </tr>
-              <tr>
-                <th scope="row">2</th>
-                <td>Jacob</td>
-                <td>Thornton</td>
-                <td>@fat</td>
-              </tr>
-              <tr>
-                <th scope="row">3</th>
-                <td colspan="2">Larry the Bird</td>
-                <td>@twitter</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- footer -->
-  <footer class="container-fluid bg-light fixed-footer ">
-    <div class="row">
-      <div class="col-md-6">
-        <p class="font-weight-light  align-bottom" style="margin: 0; padding: 10px;">Copyright © 2018 <a href="https://gangsterteam.github.io/twinkle/">Twinkle</a>.
-          Theme by <a href="https://github.com/GangsterTeam/">GangsterTeam</a> All rights reserved.</p>
-      </div>
-      <div class="col-md-6 text-right">
-        <p class="font-weight-light  align-bottom" style="margin: 0; padding: 10px;"><a href="https://github.com/GangsterTeam/twinkle">Source
-            code</a></p>
-      </div>
-    </div>
-  </footer>
+    <button type="submit">Login</button>
+    <label>
+      <input type="checkbox" checked="checked" name="remember"> Remember me
+    </label>
+  </div>
+  <div class="container" style="background-color:#f1f1f1">
+    <button type="button" class="cancelbtn">Cancel</button>
+    <span class="psw">Forgot <a href="#">password?</a></span>
+  </div>
+</form>
 </body>
-
-<script src="./js/index.js"></script>
-
 </html>
