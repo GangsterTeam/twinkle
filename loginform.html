@@ -15,6 +15,11 @@ input[type=text], input[type=password] {
     box-sizing: border-box;
 }
 
+.abc
+{
+  width: 30%;
+}
+
 button {
     background-color: #4CAF50;
     color: white;
@@ -29,10 +34,7 @@ button:hover {
     opacity: 0.8;
 }
 
-.cancelbtn {
-    width: auto;
-    padding: 10px 18px;
-    background-color: #f44336;
+
 }
 
 .imgcontainer {
@@ -40,18 +42,17 @@ button:hover {
     margin: 24px 0 12px 0;
 }
 
-img.avatar {
-    width: 40%;
-    border-radius: 50%;
-}
+
 
 .container {
     padding: 16px;
+    width: 30%;
+    margin-left: 34%;
 }
 
 span.psw {
     float: right;
-    padding-top: 16px;
+    padding-top: 0px;
 }
 
 /* Change styles for span and cancel button on extra small screens */
@@ -60,22 +61,18 @@ span.psw {
        display: block;
        float: none;
     }
-    .cancelbtn {
-       width: 100%;
-    }
+    
 }
 </style>
 </head>
-<body>
+<body style="background-color:#e9ecef;">
 
 <h2 style="text-align: center;">Login Form</h2>
 
 <form action="/action_page.php">
-  <div class="imgcontainer">
-    <img src="img_avatar2.png" alt="Avatar" class="avatar">
-  </div>
+  
 
-  <div class="container">
+  <div class="container" >
     <label for="uname"><b>Username</b></label>
     <input type="text" placeholder="Enter Username" name="uname" required>
 
@@ -86,12 +83,13 @@ span.psw {
     <label>
       <input type="checkbox" checked="checked" name="remember"> Remember me
     </label>
+
+    
+    <span class="psw"> <a href="#">Forgot password?</a></span>
+  
   </div>
 
-  <div class="container" style="background-color:#f1f1f1">
-    <button type="button" class="cancelbtn">Cancel</button>
-    <span class="psw">Forgot <a href="#">password?</a></span>
-  </div>
+  
 </form>
 
 </body>
