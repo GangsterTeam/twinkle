@@ -1,0 +1,89 @@
+body{
+	margin: 0;
+	padding: 0;
+	background-color: #3a0a0a; 
+	font-family: sans-serif;
+}
+
+.loginForm{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 350px;
+	min-height: 200px;
+	background: #fff;
+	border-radius: 10px;
+	padding: 40px;
+	box-sizing: border-box;
+}
+
+.icon{
+	width: 30%;
+	height: 30%;
+}
+
+.icon{
+	margin: 0 auto;
+	display: block;
+}
+
+h3{
+	margin: 0;
+	padding: 0 0 20px;
+	color: #262626;
+	text-align: center;
+}
+
+.loginForm input{
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+.loginForm input[type="text"],
+.loginForm input[type="password"]{
+	border: none;
+	border-bottom: 2px solid #262626;
+	outline: none;
+	height: 40px;
+	background: transparent;
+	font-size: 16px;
+	padding-left: 20px;
+	box-sizing: border-box;
+}
+
+.loginForm input[type="text"]:focus,
+.loginForm input[type="password"]:focus{
+	border-bottom: 2px solid #f00;
+	transition: .3s ease all;
+}
+
+.inputBox{
+	position: relative;
+}
+
+.inputBox span{
+	position: absolute;
+	top: 10px;
+	color: #262626;
+}
+
+.loginForm input[type="submit"]{
+	border: none;
+	outline: none;
+	height: 40px;
+	font-size: 16px;
+	background: #ed292a;
+	color: #fff;
+	border-radius: 20px;
+	cursor: pointer;
+}
+
+.loginForm a{
+	color: #262626;
+	font-size: 14px;
+	font-weight: bold;
+	text-decoration: none;
+	text-align: center;
+}
+
