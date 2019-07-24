@@ -6,33 +6,38 @@
 		<meta name="author" content="Twinkle">
 		<meta name="keywords" content="Twinkle, bootstrap4, dashboard theme">
 		<meta name="description" content="This is the login page for your Twinkle dashboard">
-		<link href="/css/loginform.css" rel="stylesheet" type="text/css" />
+		<link href="/style/loginform.css" rel="stylesheet" type="text/css" />
 	</head>
 <body>
-	<h2 style="text-align: center;">Login Form</h2>
+	<div class="card">
+		<div class="card-header border-bottom">
+			<h2>Login</h2>
+		</div>
+		<div class="card-body">
+			<form action="/action_page.php">
+				<div class="imgcontainer">
+					<img src="/images/loginform/img_avatar2.png" alt="Avatar" class="avatar">
+				</div>
 
-	<form action="/action_page.php">
-	<div class="imgcontainer">
-		<img src="img_avatar2.png" alt="Avatar" class="avatar">
-	</div>
+				<div class="container border-bottom">
+					<label for="uname"><b>Username:</b></label>
+					<input type="text" placeholder="Enter Username" name="uname" id="uname" required>
+					<br/>
 
-	<div class="container">
-		<label for="uname"><b>Username</b></label>
-		<input type="text" placeholder="Enter Username" name="uname" required>
-
-		<label for="psw"><b>Password</b></label>
-		<input type="password" placeholder="Enter Password" name="psw" required>
+					<label for="psw"><b>Password:</b></label>
+					<input type="password" placeholder="Enter Password" name="psw" required>
+					<br/>
+					
+					<button type="submit">Log in</button>
+					<input type="checkbox" checked="checked" name="remember"> Remember me
+				</div>
 			
-		<button type="submit">Login</button>
-		<label>
-		<input type="checkbox" checked="checked" name="remember"> Remember me
-		</label>
+				<div class="container">
+					<button type="button" class="cancelbtn" onclick="history.back()">Cancel</button>
+					<span class="psw"><a href="#">Forgot password?</a></span>
+				</div>
+			</form>
+		</div>
 	</div>
-
-	<div class="container" style="background-color:#f1f1f1">
-		<button type="button" class="cancelbtn" onclick="history.back()">Cancel</button>
-		<span class="psw">Forgot <a href="#">password?</a></span>
-	</div>
-	</form>
 </body>
 </html>

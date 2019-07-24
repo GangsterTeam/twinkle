@@ -1,0 +1,83 @@
+html, body {height:100%;padding:0;margin:0;}
+body {font-family: Arial, Helvetica, sans-serif;display: -webkit-flexbox;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    justify-content: center;}
+input[type=text], input[type=password] {
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+button:hover {
+    opacity: 0.8;
+}
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+.imgcontainer {
+    text-align: center;
+    margin: 12px 0 12px 0;
+}
+img.avatar {
+    width: 100px;
+    border-radius: 50%;
+}
+
+.container {
+    padding: 16px;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+.card {border-radius:7px;width:35%;height:auto;border:2px solid #f1f1f1;box-shadow:5px 7px 10px #f1f1f1;-webkit-box-shadow:5px 7px 10px #f1f1f1;-moz-box-shadow:5px 7px 10px #f1f1f1;-o-box-shadow:5px 7px 10px #f1f1f1}
+.card-header h2 {text-align:center;text-transform:uppercase;}
+.border-bottom {border-bottom:1px solid #f1f1f1;}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+}
+/* Small screens */
+@media screen and (max-width:425px){
+    .card { width:100%;border:0;}
+    .card input[type=text], input[type=password] {width:100%;}
+}
+/* Tablets and below */
+@media screen and (max-width:768px){
+    .card { width:80%;}
+    .card input[type=text], input[type=password] {width:80%;}
+}
+/* Medium screens and above */
+@media screen and (min-width:769px){
+    .card { width:35%;}
+    .card input[type=text], input[type=password] {width:80%;}
+}
