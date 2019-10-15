@@ -42,11 +42,19 @@ button:hover {
 
 img.avatar {
     width: 40%;
+    height: 50%;
     border-radius: 50%;
 }
 
 .container {
     padding: 16px;
+    text-align: center;
+}
+.container_parent {
+    padding: 16px;
+    width: 40%;
+    margin: auto;
+    border: 3px solid #f1f1f1;
 }
 
 span.psw {
@@ -66,23 +74,22 @@ span.psw {
 }
 </style>
 </head>
-<body>
+<body style="text-align: center;">
+<div class="container_parent">
 
 <h2 style="text-align: center;">Login Form</h2>
-
-<form action="/action_page.php">
   <div class="imgcontainer">
     <img src="img_avatar2.png" alt="Avatar" class="avatar">
   </div>
 
   <div class="container">
-    <label for="uname"><b>Username</b></label>
-    <input type="text" placeholder="Enter Username" name="uname" required>
+    <label><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="uname" id="username_login" required>
 
-    <label for="psw"><b>Password</b></label>
-    <input type="password" placeholder="Enter Password" name="psw" required>
+    <label><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" id="username_password" required>
         
-    <button type="submit">Login</button>
+    <button type="button" id="login_btn">Login</button>
     <label>
       <input type="checkbox" checked="checked" name="remember"> Remember me
     </label>
@@ -92,7 +99,8 @@ span.psw {
     <button type="button" class="cancelbtn" onclick="history.back()">Cancel</button>
     <span class="psw">Forgot <a href="#">password?</a></span>
   </div>
-</form>
-
+</div>
 </body>
 </html>
+
+<script src="./js/common.js"></script>
