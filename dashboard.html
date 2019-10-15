@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Dashboard</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <style>
+        table {
+            margin: 40px 0px;
+            background-color: white;
+            font-size: 16px;
+            border-radius: 5px;
+            box-shadow: 0 0px 1px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+        }
+
+        .row.content {
+            height: 1500px
+        }
+
+        .sidenav {
+            background-color: #ffffff;
+            height: 100%;
+        }
+
+        footer {
+            background-color: #555;
+            color: white;
+            padding: 15px;
+        }
+
+        .sidenav a {
+            color: black;
+            font-size: 15px;
+        }
+
+        .sidenav img {
+            width: 25%;
+        }
+
+        body {
+            background-color: #dddddd;
+        }
+
+        h5 {
+            padding: 20px;
+            font-size: 25px;
+            font-weight: bolder;
+        }
+
+        section img {
+            width: 70%;
+        }
+
+        .box {
+            height: 100%;
+            width: 25%;
+            background-color: lightsalmon;
+            border: 1px solid lightgrey;
+            float: right;
+            text-align: center;
+            padding: 16px;
+            color: #ffffff;
+
+        }
+
+        .number {
+            font-size: 25px;
+        }
+
+        .mg-top {
+            margin-top: -156px;
+            background-color: lightskyblue !important;
+
+
+        }
+        .bg-clr{
+            background-color: #fff;
+        }
+
+        th,
+        td ,.txt-ctr{
+            text-align: center;
+        }
+
+        td {
+            padding: 20px !important;
+        }
+
+        .card-1 {
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+            transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+        }
+
+        .card {
+            background: #fff;
+            border-radius: 2px;
+            display: inline-block;
+            height: 300px;
+            margin: 1rem;
+            position: relative;
+            width: 40%;
+        }
+        p{
+            text-align: center;
+            padding: 20px;
+        }
+        .mg-lf{
+            margin-left: 16%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <div class="row content">
+            <div class="col-sm-2 sidenav">
+                <img src="start.jpeg" alt="start">
+                <br> <br>
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Search Blog..">
+                    <span class="input-group-btn">
+                        <button class="btn btn-default" type="button">
+                            <span class="glyphicon glyphicon-search"></span>
+                        </button>
+                    </span>
+                </div>
+                <ul class="nav nav-pills nav-stacked">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Messages</a></li>
+                    <li><a href="#">Mails</a></li>
+                    <li><a href="#">Forms</a></li>
+                    <li><a href="#">Tables</a></li>
+                    <li><a href="#">Datatables</a></li>
+                    <li><a href="#">Components</a></li>
+                    <li><a href="#">Activity</a></li>
+                    <li><a href="#">Profile</a></li>
+                    <li><a href="#">Support</a></li>
+                    <li><a href="#">Contacts</a></li>
+                    <li><a href="#">Charts</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#">File Manager</a></li>
+                    <li><a href="#">Contact Form</a></li>
+                    <li><a href="#">Calender</a></li>
+                </ul>
+            </div>
+            <div class="col-sm-9">
+                <header>
+                    <h5>DASHBOARD</h5>
+                    <hr>
+                </header>
+                <section>
+
+                    <img src="bar.jpeg" alt="start">
+                    <div class="box">
+                        <span class="number">25</span>
+                        <h5>Open Tickets</h5>
+
+                    </div>
+                    <div class="box mg-top">
+                        <span class="number">15</span>
+                        <h5>Close Ticket</h5>
+
+                    </div>
+                    <br><br>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Firstname</th>
+                                <th>Lastname</th>
+                                <th>Email</th>
+                                <th>Message Count</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>John</td>
+                                <td>Doe</td>
+                                <td>joh@gmail.com</td>
+                                <td>2</td>
+                            </tr>
+                            <tr>
+                                <td>Mary</td>
+                                <td>Moe</td>
+                                <td>mar1@gmail.com</td>
+                                <td>5</td>
+                            </tr>
+                            <tr>
+                                <td>July</td>
+                                <td>Dooley</td>
+                                <td>ju1@gmail.com</td>
+                                <td>10</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <br><br>
+
+                    <div class="row">
+                        <div class="col-sm-12 " >
+                            <div class="col-sm-5 bg-clr" >
+                                <h5 class="txt-ctr">Tickets</h5>
+                                <p>Loreum ipsum Loreum ipsum Loreum ipsum Loreum ipsum Loreum ipsum Loreum ipsum Loreum Loreum ipsum Loreum ipsum Loreum ipsum Loreum ipsum Loreum ipsum Loreum ipsum Loreum ipsum Loreum ipsum Loreum ipsum LoreumLoreum ipsum Loreum ipsum Loreum ipsum Loreum ipsum Loreum ipsum Loreum ipsum Loreum ipsum Loreum ipsum  </p>
+                            </div>
+                            <div class="col-sm-5 bg-clr mg-lf">
+                                    <h5 class="txt-ctr">Tickets</h5>
+                                    <p>Loreum ipsum Loreum ipsum Loreum ipsum Loreum ipsum Loreum Loreum ipsum Loreum ipsum Loreum ipsum Loreum ipsum Loreum ipsum Loreum ipsum LoreumLoreum ipsum Loreum ipsum Loreum ipsum Loreum ipsum Loreum ipsum Loreum ipsum Loreum ipsum Loreum ipsum Loreum ipsum Loreum ipsum Loreum ipsum Loreum ipsum Loreum ipsum  </p>
+                           
+                            </div>
+                        </div>
+                    </div>
+
+                    <br><br>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Firstname</th>
+                                <th>Lastname</th>
+                                <th>Email</th>
+                                <th>Message Count</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>John</td>
+                                <td>Doe</td>
+                                <td>joh@gmail.com</td>
+                                <td>2</td>
+                            </tr>
+                            <tr>
+                                <td>Mary</td>
+                                <td>Moe</td>
+                                <td>mar1@gmail.com</td>
+                                <td>5</td>
+                            </tr>
+                            <tr>
+                                <td>July</td>
+                                <td>Dooley</td>
+                                <td>ju1@gmail.com</td>
+                                <td>10</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <footer class="container-fluid">
+        <p>@Copyright</p>
+    </footer>
+
+</body>
+
+</html>
