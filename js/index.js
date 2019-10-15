@@ -38,19 +38,19 @@ var chLine = document.getElementById("chLine");
 var chartData = {
     labels: ["S", "M", "T", "W", "T", "F", "S"],
     datasets: [{
-            data: [589, 445, 483, 503, 689, 692, 634],
-            backgroundColor: 'transparent',
-            borderColor: colors[0],
-            borderWidth: 4,
-            pointBackgroundColor: colors[0]
-        },
-        {
-            data: [639, 465, 493, 478, 589, 632, 674],
-            backgroundColor: colors[3],
-            borderColor: colors[1],
-            borderWidth: 4,
-            pointBackgroundColor: colors[1]
-        }
+        data: [589, 445, 483, 503, 689, 692, 634],
+        backgroundColor: 'transparent',
+        borderColor: colors[0],
+        borderWidth: 4,
+        pointBackgroundColor: colors[0]
+    },
+    {
+        data: [639, 465, 493, 478, 589, 632, 674],
+        backgroundColor: colors[3],
+        borderColor: colors[1],
+        borderWidth: 4,
+        pointBackgroundColor: colors[1]
+    }
     ]
 };
 
@@ -77,13 +77,13 @@ var chBar = document.getElementById("chBar");
 var chBarData = {
     labels: ["S", "M", "T", "W", "T", "F", "S"],
     datasets: [{
-            data: [589, 445, 483, 503, 689, 692, 634],
-            backgroundColor: colors[0]
-        },
-        {
-            data: [209, 245, 383, 403, 589, 692, 580],
-            backgroundColor: colors[1]
-        },
+        data: [589, 445, 483, 503, 689, 692, 634],
+        backgroundColor: colors[0]
+    },
+    {
+        data: [209, 245, 383, 403, 589, 692, 580],
+        backgroundColor: colors[1]
+    },
     ]
 };
 
@@ -108,4 +108,5 @@ if (chBar) {
             }
         }
     });
+    $("section:last").css("padding-bottom", "7rem")
 }
