@@ -109,3 +109,9 @@ if (chBar) {
         }
     });
 }
+
+var log_flag = sessionStorage.getItem("logged_in")
+if(log_flag.length >1){
+    document.getElementById("signout_btn").style.display = "none"
+    document.getElementById("greetings").innerHTML = "Hello " + log_flag
+}
