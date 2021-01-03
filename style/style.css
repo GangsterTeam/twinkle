@@ -21,3 +21,11 @@ body {
   position: fixed;
   bottom: 0;
 }
+img{
+  border-radius: 360px;
+}
+
+.footer{
+  margin: 2px;
+  background-color: rgb(85, 94, 102);
+}
